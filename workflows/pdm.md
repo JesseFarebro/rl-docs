@@ -217,7 +217,7 @@ set -eEuo pipefail
 module load cuda/11.8 singularity
 
 # Make sure to pass `--nv` to properly forward the GPU
-singularity exec --nv oras://ghcr.io/jessefarebro/containers/pdm:3.10 python my_script.py "$@"
+pdm run my_script.py "$@"
 ```
 
 ## Troubleshooting
