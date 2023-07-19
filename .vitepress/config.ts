@@ -15,6 +15,10 @@ export default defineConfig({
     },
     nav: [{ text: "Datasets", link: "https://datasets.server.mila.quebec/" }],
     sidebar: [
+      {
+        text: "Workflows",
+        items: [{ text: "PDM", link: "/workflows/pdm" }],
+      },
       // Example
       /*
       {
